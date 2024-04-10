@@ -1,0 +1,1438 @@
+.background{
+   
+    /* background-image: url("https://images.unsplash.com/photo-1702952084675-b5489e589251?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    min-width: 100%;
+    min-height : 1000px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    width:100vw;
+    height: 100vh; */
+}
+html{
+    font-size: 10px;      
+}
+*{
+    box-sizing: border-box;
+}
+:root{    /*lệnh này kiểu tạo ra biến và khi muốn sử dụng lại hoặc thay màu,khi muốn đổi màu chỉ cần thay màu ở đây chỉ cần sử dụng câu lệnh dưới*/ 
+  /*tến biến*/  --primer-color:red;
+   /*tến biến*/--second-color:pink;
+               --font-size: 20px;
+               --firt-width:500px
+    /*cách thực hiện:dùng câu lệnh var(....) ở các nơi cần thay đổi*/
+    /*khi muốn đổi màu khác cho 1 khối(gọi là biến cục bộ) mà ta đã sử dụng lệnh var() thì chỉ cần ghi lại tên biến đã sử dụng ở đó(ghi dòng ở mới)và màu muốn đổi*/
+
+}
+.body{
+    /* font-family: 'Poppins', sans-serif; */
+     /* font-family: 'Poppins', sans-serif;  */
+} 
+.em{
+    color: brown;
+    width: 10em;
+    height: 10em;
+    background-color: aqua;
+    font-size: 32px;
+}
+.rem{
+    color:aqua;
+    width: 10rem;
+    height: 10rem;
+    background-color: brown; 
+   /* border: 5px solid blue;width: ;  style   color */   /*lệnh này dùng để cắt góc,hoạc bao bọc*/
+  /*  border-top: 3px solid yellow;
+    border-left: 5px solid aqua;
+    border-bottom: 5px solid greenyellow;
+    border-right: 5px solid darkmagenta;
+    border: solid black;
+    border-radius: 50%;      /*lệnh hình tròn*/
+    
+
+}
+.margin{
+    width: 14rem;
+    height: 14rem;
+    background-color: brown ;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-left: auto;   
+    margin-right: auto;
+    padding: 20px;
+    /*lệnh margin chỉnh góc ở giữa hoặc 2 bên*/
+   
+    
+
+   
+
+
+}
+.margin2{
+    margin-top: 20px;
+    
+}
+.boxed{
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid black;
+    padding: 1rem;
+    /* box-sizing: content-box;  */
+     /* 160+5+5+16+16=202 
+     100+5+5+10+10  */
+    /* box-sizing: border-box;  */      /*lệnh này dùng để chuẩn khung hình*/
+
+
+
+
+  
+
+}
+a{
+    /* color:brown;
+    background-color: aqua;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    display: inline-block;      /*thẻ inline không chuẩn dùng lệnh này*/
+    /* display: none; */ 
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+.font{
+   /* width: 50rem;
+    height: 50rem;
+    color: aqua;
+    background-color: black; 
+    display: inline-block;  */
+    /* padding: 5rem;  */
+     /* opacity:  0.5;   độ mờ */
+    /* font-family: 'Poppins', sans-serif;         /*kiểu chữ*/
+     font-size: 20px;
+     font-weight: 300;        /*độ to nhỏ của chữ*/
+     font-style: italic;         /*in nghiêng*/
+      line-height: 1.5;            /* độ cách dòng */
+     /* text-align: center;             lúc xuống dòng ở bên trái hay phải */
+     max-width: 100px;               /*  các chữ sẽ xuống dòng luôn như hình cây thông noel(tạo 1 vùng các chữ chỉ xuất hiện trong đó */ 
+      letter-spacing: 2px;                     /*  khoảng cách giữa các kí tự */
+     text-align: left;                     /*các chữ sẽ bằng nhau bên nào */
+      /* text-align: justify;                 các chữ ở 2 đầu đầu sẽ cách bằng nhau */
+     word-spacing: 2px;                   /* khoảng cách giữa các từ */
+     /* white-space: nowrap;                các chữ sẽ ở 1 dòng không xuống hàng */
+     overflow: hidden;                  /* khi các chữ trong 1 vùng tràn ra ngoài sẽ bị ẩn đi */
+     text-overflow: ellipsis;             /*hiển thị dấu 3 chấm khi chữ tràn ra ngoài*/
+     display: -webkit-box;              /*khi các chữ quá 1 dòng sẽ bị ẩn đi và ẩn ở dòng số bao nhiêu*/     /*kết hợp 3 dòng này để hiển thị chức năng này*/
+     -webkit-box-orient: vertical;          /*khi các chữ quá 1 dòng sẽ bị ẩn đi và ẩn ở dòng số bao nhiêu*/
+     -webkit-line-clamp: 4;                /*khi các chữ quá 1 dòng sẽ bị ẩn đi và ẩn ở dòng số bao nhiêu*/
+     overflow: hidden;                  /* khi các chữ trong 1 vùng tràn ra ngoài sẽ bị ẩn đi */
+     /* text-overflow: ellipsis;         */ 
+  
+}
+
+
+.hello{
+    /* font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;  
+    line-height: 1.5; 
+    /* text-align: center;  */
+    /* max-width: 100px;  */
+    /* text-align: left; */
+    /* text-align: justify */
+    /* white-space: nowrap; */
+    /* overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp:6;
+     overflow: hidden;
+     text-overflow: ellipsis;  */
+     /* word-break: break-all;      giớt xuống hàng bất cứ khi nào */
+     /* word-break: break-word;    rớt theo từ */
+     /* max-width: 300px;   */ 
+}
+img{
+    display: block;    /*chuyển từ thẻ inline sang thẻ block*/
+    max-width: 100%;    /*điều chỉnh cho ảnh bằng web chiều rộng*/
+    display: inline-block;   /*CHUYỂN SANG THẺ INLINE */
+   
+
+}
+.images{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;   /*làm cho hình khi co lại không bị méo*/
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-radius: 50%;
+    display: inline-block;
+}
+/*KHI MUỐN ĐƯU HÌNH RA GIỮA(HOẶC ĐIỀU CHỈNH VỊ TRÍ HÌNH) MÀ LÀ THẺ INLINE THÌ TA TẠO 1 CLASS BAO QUANH IMAGE ĐÓ RỒI THỰC HIỆN LỆNH SAU:*/
+.BB{
+    text-align: center;
+}
+
+
+
+
+
+.pseudo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color:gold; 
+}
+.pseudo :hover{                    /* lệnh này giúp thay đổi màu chữ khi di chuột vào(thẻ inline và thẻ block khi di vào sẽ hiện khác nhau */
+    /* color: aqua;*/     
+}
+.pseudo:active{            /*lệnh này giúp đổi màu chữ khi nhấp vào*/
+    color: aqua;
+}
+p{
+    /* font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color:gold;  */
+}
+p:visited{                 /*lệnh này khi chúng ta nhấp vào rồi nó sẽ lưu và lần sau sẽ hiển thị màu đó*/
+    /* color: aqua; */
+} 
+
+
+
+
+
+
+
+.hinhnen{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    max-width: 300px;
+    /* max-height: 10px; */
+    text-align: justify; 
+    /* white-space: nowrap;*/
+     overflow: hidden;                /*  khi các chữ trong 1 vùng tràn ra ngoài sẽ bị ẩn đi */ 
+     text-overflow: ellipsis; 
+     /* word-break: break-word; */
+     display: -webkit-box;              /*khi các chữ quá 1 dòng sẽ bị ẩn đi và ẩn ở dòng số bao nhiêu*/     /*kết hợp 3 dòng này để hiển thị chức năng này*/
+     -webkit-box-orient: vertical;          /*khi các chữ quá 1 dòng sẽ bị ẩn đi và ẩn ở dòng số bao nhiêu*/
+     -webkit-line-clamp: 3; 
+
+  
+   
+   
+   
+    
+}
+.hinhnen:hover {
+    color:red;
+
+}
+
+
+
+.hi{
+    /* background-image: url("https://images.unsplash.com/photo-1703244551371-ecffad9cc3b6?q=80&w=2559&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    /* width:400px ;
+    height:400px; */
+    /* background-color: aqua; */
+    /* background-position: center center;
+    background-size: cover; */
+    /* background-repeat:no-repeat ;
+   background-attachment: fixed;   cố định ảnh */
+   /* border-radius: 50%;
+   box-sizing: border-box;    
+   padding-left: 20px; 
+   padding-top: 100px; */
+   /* font-family: 'Poppins', sans-serif;
+   font-size:20px ;
+   font-weight:200 ; */
+}
+
+
+
+.link{
+  
+    /* text-decoration: none;
+    font-size: 20px;
+    font-weight: 30;
+    color: white;
+    background-color: aqua;
+    width: 500px;
+    height: 500px; 
+    padding-left: 50px;
+    padding-top: 50px; */
+                                        
+}
+
+.trung{
+    display: inline-block;  /* có chiều cao vf chiều rộng là thẻ block nhưng cx có viết 1 dòng của thẻ inline*/
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 30;
+    color: white;
+    background-color: aqua;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* margin-top: 50px ; */
+}
+.trung:hover{
+    color: brown;
+    background-color: coral;
+}
+.trung--around{
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.trung--around:hover{
+    color: chartreuse;
+    background-color: darkgoldenrod;
+}
+.trung--arounded{
+    border-radius: 10px;
+    margin-left: 10px; ;
+
+}
+.trung--arounded:hover{
+    color: darkmagenta;
+    background-color: gold;
+}
+
+p1{
+    /* margin-left: 20px; */
+}
+p2{
+    /* margin-left :70px;  */
+
+}
+p3{
+    /* margin-left: 55px; */
+}
+.tong{
+    /* margin-top: 50px; */
+}
+.bitbox{
+    /* width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right top,red,blue,yellow);   chuyển nhiều màu cho một khối */
+    /*
+    direction:to right(trái qua phải),to left(phải qua trái),to buttom(từ trên xuống dưới),to top(từ dưới lên trên)
+     ,to right bottom(từ trái qua phải rồi chạy xuống dưới),  120deg(120 độ)
+     color1:
+     color2:
+    */
+     /* cursor: pointer;                    biến con chuột thành hình bàn tay */
+    /* display: none;               làm cho khối biến mất hoàn toàn */
+    /* opacity: 0;                   làm cho khối mờ hoặc biến mất và vẫn chiếm diện tích và có thể ấn vô đc */
+     /* visibility: hidden;         làm cho khối biến mất tuy nhiên vẫn chiễm diện tích nhưng k ấn vô đc */
+     /* transition: opacity 10s,  */
+}
+
+
+.bitbox:hover{
+
+     
+    /* display: block;         */
+    /* opacity: 1;              */
+    /* visibility: visible; */
+    
+
+}
+
+
+
+.chu{
+    font-weight: bold;  
+    font-size: 30px;
+    background-image: linear-gradient(to right top,red,blue,yellow); /*chuyển màu background của chữ*/
+    display: inline-block;                             
+    margin-top: 50px;
+    margin-left: 20px;
+    /* color: transparent;                 chuyển chữ sang trong suất(khoog nhìn thấy */
+    /* -webkit-background-clip:text;       chuyển màu của chữ thành màu mình đã sử dụng trong backgound-image,kết hợp cả điều kiện ở dưới */
+    /* background-clip: text; */
+      /* color:brown; */
+      cursor: pointer;
+}
+@supports (-webkit-background-clip:text) {                /*lệnh này như sau:nếu trang web đó hỗ trợ sẽ dùng supports còn nếu không sẽ dùng color:red*/
+  .chu{
+    color: transparent; 
+    -webkit-background-clip:text;
+    background-clip: text;
+    color: red;
+  }  
+}
+.anhchen{
+    background-image:linear-gradient(to right top,rgba(0, 217, 255, 0.179),rgba(255, 247, 0, 0.198)),url("https://media.istockphoto.com/id/1436831522/vi/anh/qu%C3%A0-t%E1%BA%B7ng-v%C3%A0-c%C3%A2y-th%C3%B4ng-noel-trang-tr%C3%AD-trong-n%E1%BB%99i-th%E1%BA%A5t-v%E1%BB%9Bi-l%C3%B2-s%C6%B0%E1%BB%9Fi.jpg?s=2048x2048&w=is&k=20&c=1-pY8ZJcMbNjwNKYI8WXjl6SXDrpvwlwjFXgovhuYHI=");
+    /*gán màu và hình ảnh vao 1 khung(cái nào ở trc sẽ đc code trc và chuyển màu về rgba sau đó điều chỉnh độ trong suất*/
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;      /*Đảm bảo rằng hình ảnh nền sẽ che phủ toàn bộ kích thước của phần tử mà không làm biến dạng tỉ lệ chiều rộng/chiều cao.*/
+    background-repeat:no-repeat ;
+
+}
+.shadow{
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    margin: auto;   /*đưa ra giữa*/
+    margin-top: 250px;
+  /*  box-shadow: x y blur spread color inset;   tạo bóng cho khối 
+        x:Giá trị dương là sang phải, giá trị âm là sang trái.
+        y:Giá trị dương là xuống dưới, giá trị âm là lên trên.
+        blur:Độ mờ của bóng. Giá trị càng lớn, bóng càng mờ.
+        spread:Tăng hoặc giảm kích thước của bóng.
+        inset:bóng sẽ nằm ở bên trong khối*/
+        box-shadow: 20px -12px 10px 11px var(--second-color);   
+    
+}
+.show-text{
+    --second-color:yellow;
+    font-size: var(--font-size);
+    font-weight: bold;
+    text-shadow:20px -12px 10px var(--second-color); /*làm bóng cho chữ chỉ thay box bằng text và ở chữ không có tăng hoặc giảm kích thước của bóng*/
+ 
+}
+
+
+
+#title.title{
+       /* color:chartreuse; */
+}
+.title{                             /*vì ở đây là title(class)nên sẽ ưu tiên hơn-->calss đc ưu tiên hơn*/
+    /* font-size: var(--font-size);
+    font-weight: bolder;color: var(--
+    second-color);
+    cursor: pointer;
+    */
+}
+h2#title{                           /*nếu một lệnh kết hợp 2 hoặc 3 class;ID;h2 sẽ mạnh nhất sau !important thôi */
+    /* color: brown ;    !important sẽ là ưu tiên cao nhất --> nó sẽ lấy đoạn lệnh này */
+}
+
+h2:hover{
+
+    /* color:aqua !important;            ưu tiên từ dưới lên trên nên sẽ lấy màu là xanh mặc dù có 2 h2 */
+}
+        /*độ ưu tiên:tag<class<ID<! important*/     
+   
+ul{
+    /* font-size: 2rem;
+    font-weight: bolder; */
+}
+li:first-child{          /*chọn phần tử trong nhóm <ul> đầu sẽ là first-child*/
+    /* color: brown; */
+}
+li:last-child{            /*phần tử cuối cùng là last-child*/
+    /* color: aqua; */
+}
+li:nth-child(2){          /*các phần tử tiếp theo sẽ là nth-child(số thứ tự của phần tử)*/
+    /* color: chocolate; */
+}
+li:nth-child(3){
+    /* color: cadetblue; */
+}
+li:nth-child(4){
+    /* color: coral; */
+}
+li:nth-last-child(1){        /*cái này cx giống cái ở trên nhưng số thứ tự sẽ là từ dưới nên,cái khác nữa là cái nó sẽ đếm lần lượt không có first hay last*/
+
+    /* color: deepskyblue; */
+}
+li:not(:nth-last-child(1)){   /*cái này sẽ giúp chọn tất cả các phần tử ngoại trừ phần tử trong ngoặc và trong ngoặc sẽ cso thể là class hoặc id hoặc tag*/
+    /* color: aqua; */
+}
+li:nth-child(odd){         /*odd:là số lẻ cái này chọn các phần tử ở vị trí số lẻ*/
+    /* color: hotpink; */
+}
+li:nth-child(even){          /*even:là số chẵn cái này sẽ chọn tất cả các phần tử là số chẵn*/
+      /* color: coral; */
+}
+li:nth-child(2n+1){       /*cái này sẽ tính từ n=0(2n+1=2x0+1=1-->lấy vị trí đầu và sẽ tiếp tục tăng dần n1,2,3,4..)các số 1 và 2 ở đây có thể thay đc nhưng n sẽ cố định chạy bắt đầu từ 0*/  
+    /* color: black; */
+}
+p:first-child{
+    /* color: aqua; */
+    
+}
+p:first-of-type{            /*of-type cũng giống mấy cái kia tuy nhiên nó sẽ chọn bằng cách từng loại thẻ ví dụ thẻ<p> là 1 loại ;thẻ<li> là một loại và trong mỗi loại sẽ có vị trí khác nhau.*/
+
+    /* color: chartreuse; */
+}
+p:nth-of-type(2){
+    /* color:bisque */
+}
+li:first-of-type{
+    /* color:blue; */
+}
+li:nth-of-type(2){
+    /* color:aqua; */
+}
+/*child sẽ lần lượt không cần biết loại thẻ còn of-type sẽ lần lượt nhưng theo các loại thẻ riêng biệt*/
+/*tóm tắt:  first-child
+            last-child 
+            nth-child(2)
+            nth-last-child(1)
+            not(:nth-last-child(1))
+            nth-child(odd)
+            nth-child(even)
+            nth-child(2n+1)
+            first-of-type
+            nth-of-type(2){   */
+
+li:first-child span{   /*khi có nhiều thẻ trong 1 nhóm sẽ gõ bth và thêm thẻ cần thay đổi vào sau đuôi*/
+    /* color: red; */
+}
+li:first-child a{
+    /* color: aqua; */
+}
+li:first-of-type a{
+    /* color: coral; */
+}
+li:nth-of-type(2) span {
+    /* color:chartreuse; */
+}
+li:nth-of-type(2) p{
+    /* color: blue; */
+}
+li:nth-of-type(2) p{
+    /* color: brown; */
+}
+li:nth-of-type(2) > p:nth-of-type(2){    /*cách này nếu mà trong 1 nhóm có nhiều thẻ giống nhau ví dụ như có đến 2 hoặc 3 thẻ <p>*/
+    /* color:blue; */
+}
+li:last-of-type{
+    /* color: red; */
+}
+h3+h4{               /*chỉ các thẻ ở liền đằng sau(kế tiếp)*/          
+    /* font-size: 5rem !important;   
+    color:aqua */
+    
+    
+}
+h3+h4+h5+{           /*chỉ các thẻ kế kế tiếp sẽ thêm dấu cộng lần lượt và thẻ cuối cx sẽ đc chọn(ví dụ ở kia là thẻ h5)*/
+    /* color: brown;
+    font-size: 5rem; */
+}
+h3~h5{                 /*chọn một thẻ đứng ssau h3 không nhất thiết là sau liền kề h3 miễn là ở sau */
+    /* color: aqua ;
+    font-size: 5rem;  */
+}
+h3~div{
+    /* color: aqua ;
+    font-size: 5rem;  */
+
+}p~p{
+    /* color: darkblue;
+    font-size: 5rem; */
+}
+.cc~.kc{
+    /* color: darkblue;
+    font-size: 5rem; */
+}
+a{
+    /* font-size: 5rem;
+    display: block; */
+}
+a[href^="https"]{        /*nếu có nhiều thẻ mà chọn 1 thẻ link riêng biệt hoặc đặc biệt nào đó sẽ dùng lệnh này với ^ là bắt đầu bằng kí tự nào đó*/
+    /* color:chartreuse */
+}a[href$="vn"]{           /*cái này giống cái trên nhưng kí hiệu $ là kết thúc bằng kí tự nào đó*/
+    /* color: aqua; */
+}
+a[href*="www"]{           /*cái này giống cái trên nhưng kí hiệu * là chứa(ý là chứa kí tự đó sẽ chọn hết)*/
+    /* color:brown */
+}
+a[href*=".com"]{
+    /* color:violet */
+}
+div[data-title="value"]{        /*1 cách sử dụng khác của việc nếu có nhiều thẻ giống nhau hoặc làm cách nào để gọi 1 cách chính xác nhất không bị nhầm*/
+
+    /* font-size: 10rem;
+    color: teal;
+    font-weight: bolder; */
+}
+p:nth-of-type(1)::first-line{       /*first-line:chọn dòng đầu tiên */
+    /* color:red !important;
+    font-size: 10rem !important; */
+}
+p:nth-of-type(2)::first-letter{       /*first-letter:chọn chữ cái đầu tiên */
+    /* color:aqua;
+    font-size: 10rem;   */
+}
+.boxed2{
+    /* width: 200px;
+    height: 200px;
+    background-color: aqua;
+    font-size: 5rem;
+    font-weight: bold;
+    display: none; */
+    /* transition: property timer easing  */
+    /*property:thuộc tính
+      timer:thời gian
+      easing:cách chuyển động */
+      /* transition: background-color 2s linear; */
+      /* transition-delay: 2s;                                 mới đầu vào trang web thì 2s mới bắt đầu chạy */
+      /* transition: all 2s ease;                      áp dụng cho tất cả thuộc tính ở hover */
+     
+      
+}
+.boxed3{
+    /* width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    font-size: 2rem;
+    font-weight: bold; */
+}
+.boxed3:hover .boxed2{                /*lệnh này giúp từ class này chuyển sang 1 khối class khác với điều kiện class hiển thị cuối cùng pk là class con của khối hiển thị đầu tiên(nhớ cách!!!)*/
+
+    /* display: inline-block;           lệnh này giúp khối đã bị lệnh display:none làm biến mất hiển thị lại nhưng phải kết hợp 2 class giống như ở trên */
+ }
+.boxed2:hover{
+    /* background-color: brown;
+     font-size: 5rem;
+     color: aqua; */
+}
+.sing{
+    /* width: 200px;
+    height: 200px;
+    display: none;
+    background-color: cadetblue;
+    transition: all 2s ease; */
+}
+.sing:hover{
+    /* display: inline-block; */
+}
+.Text-gradient{
+    
+    background-color: brown;
+    font-size: 5rem;
+    display:inline-block;
+    font-weight: bolder;
+    color: aqua;
+    background-image:linear-gradient(to right,rgb(0, 157, 255), #f200ff);
+    text-transform: uppercase; /*chuyển chữ sang dạng viết hoa*/
+    color: transparent;  /*làm chữ biến mất nhưng khi di chuột vào vẫn hiện ra*/
+    -webkit-background-clip:text;     /*  chuyển màu của chữ thành màu mình đã sử dụng trong backgound-image,kết hợp cả điều kiện ở dưới */
+    background-clip: text;       /*điều kiện*/
+    margin-top: 100px;
+    
+   
+   
+}
+.container{
+    font-size: 2rem;
+    font-weight:lighter;
+}
+.baseline {
+    vertical-align: baseline;
+}
+.subscript {
+    vertical-align: sub;      /*Chuyển xuống vị trí dưới của dòng cơ bản,*/
+  }
+
+  .superscript {
+    /* vertical-align: super;      Chuyển lên vị trí trên của dòng cơ bản */
+  }
+
+  .middle {
+    vertical-align: middle;    /* Căn chỉnh theo giữa của phần tử*/
+  }
+
+  .text-top {
+    vertical-align: text-top;    /*Căn chỉnh theo đỉnh của vùng chữ của văn bản.  */
+  }
+
+  .text-bottom {
+    vertical-align: text-bottom;     /* Căn chỉnh theo đáy của vùng chữ của văn bản.*/
+  }
+  .Succsess{
+    /* width: 150px;
+    height: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    background-image: linear-gradient(to right ,rgb(0, 238, 255),rgba(255, 0, 0, 0.458));
+    font-size: 1rem;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block; */
+   /* box-shadow: x y blur spread color inset;  /* tạo bóng cho khối */
+   /* x:Giá trị dương là sang phải, giá trị âm là sang trái.
+   y:Giá trị dương là xuống dưới, giá trị âm là lên trên.
+   blur:Độ mờ của bóng. Giá trị càng lớn, bóng càng mờ.
+   spread:Tăng hoặc giảm kích thước của bóng.
+   inset:bóng sẽ nằm ở bên trong khối*/ 
+     box-shadow: 0px 0px 5px 10px rgba(255, 0, 0, 0.532)  ;
+     cursor: pointer;
+    
+   
+     
+     
+  }
+  .Information{
+    display: inline-block;
+    padding-left: 42px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right ,rgba(255, 213, 0, 0.632),rgba(255, 0, 0, 0.458));
+
+  }
+  .BUYNOW{
+    background-image: linear-gradient(to right ,rgba(255, 0, 204, 0.632),rgba(255, 0, 38, 0.458));
+    padding-left: 50px;
+   
+   
+  }
+  .warning{
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding-left: 42px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right ,rgb(0, 255, 157),rgb(166, 255, 0));
+    display:inline-block;
+    box-shadow: 0px 0px 5px 10px rgba(255, 0, 0, 0.532)  ;
+    cursor: pointer;
+    
+    
+  } 
+.contact{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding-left: 42px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right ,rgb(255, 0, 204),rgb(166, 255, 0));
+    
+    
+  }
+  .delete{
+    background-image: linear-gradient(to right ,rgb(149, 0, 255),rgb(255, 0, 115));
+    cursor: pointer;
+}
+.color__item{
+    width: 150px;
+    height: 100px;
+    background-color: aqua;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 50px;
+    transition: all 3s linear;
+}
+li:nth-of-type(1){
+    /* background-color: #f200ff;
+    transition: all 3s linear; */
+}
+li:nth-child(2){
+    /* background-color: cornflowerblue; */
+}
+li:nth-of-type(3){
+    /* background-color: blue; */
+}
+li:nth-of-type(4){
+    /* background-color: aqua; */
+   
+}
+li:nth-of-type(5){
+    /* background-color:cadetblue;   */
+    
+}
+li:not(:first-child){
+    /* background-color: black; */
+}
+li:nth-child(even){
+    /* background-color: #f200ff; */
+}
+li:nth-child(odd){
+    /* background-color: black; */
+}
+li:nth-of-type(1):hover{
+    /* background-color:#f200ff; */
+}
+li:nth-child(2):hover{
+    /* background-color:black */
+}
+li:nth-of-type(3):hover{
+    /* background-color:#f200ff */
+}
+li:nth-of-type(4):hover{
+    /* background-color:black */
+}
+li:nth-of-type(5):hover{
+    /* background-color:#f200ff     */
+} 
+.color__item:hover{
+    /* background-color: aquamarine; */
+}
+.kakashi{
+    width: 5rem;
+    height: 5rem;
+    background-color: #f200ff;
+    /* transform: scale(2,3) ;        scale:kéo dài chiều ngang hoặc dọc (x,y)x là ngang y là dọc */
+    /* transform:rotatez(45deg,y,z);       /*rotate:xoay khối đó deg là độ z là mặt phẳng*/
+    /* transform: translate(-50%,-50%);   /*translate:giúp dịch chuyển khối giống margin nhưng vị trí vẫn ở chỗ cũ,100% là sẽ dịch chuyern theo đúng kích thước của khối đó*/
+    /* transform: skew(30deg,20deg);        skew:nghiêng khối đó */
+    /* transform: matrix(1(a), 0(b), 0(c), 1(d), 0(e), 0(f)) !important;     matrix là kết hợp từ các transform ở trên,cái này đòi hỏi tính toán rắc rối hơn */ 
+      /* a và d: Thay đổi tỷ lệ theo chiều ngang và chiều dọc.
+         b và c: Bảo đảm xoay hoặc bẻ cong đối tượng.
+         e và f: Di chuyển đối tượng theo chiều ngang và chiều dọc.*/
+         position: relative;/*thuộc tính này giúp di chuyển khối mà không ảnh hưởng đến vật xung quanh,giống transform(scale)*/
+         left: 200px;
+         top: 50px;
+       
+}
+pp{
+    /* font-size: 2rem;
+    font-weight: bolder; */
+}
+.mn{
+    width: 10rem;
+    height: 10rem;
+    background-color: #f200ff;
+    margin-left: 500px;
+    transform: scale(5,2); 
+    transform: rotate(45deg);
+    transition: all 4s;
+    transform: skew(30deg,20deg); 
+   
+
+}
+.mn:hover{
+    transform: rotatex(45deg)  translate(500px,800px);
+    background-color: aqua;
+    border-radius: 50%;
+    
+}
+.box{
+    /* width: auto;
+    height: auto; */
+    background-color: #f200ff;
+    position: absolute;   
+    /*center theo chiều ngang(x) */
+    /* left: 50%;
+    transform: translatex(-50%); */
+    /*center theo chiều dọc (y)*/
+    /* top: 50%;
+    transform: translatey(-50%); */
+    /* left: 50%;
+    top: 50%; */
+    /* right: 50%;
+    bottom: 50%;    
+    transform: translate(50%,50%);
+     width: 100%;         /*phủ toàn bộ màu lớp cha*/
+    /* height: 100%;  */
+
+     /* left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;    lệnh này cũng giúp phủ toàn bộ lớp cha với điều kiện không đc đặt width và height hoặc đặt 2 cái đó về auto */ 
+   
+    /*phủ kín theo chiều ngang lệnh này phỉa có width và height mới thực hiện đc nếu k có phải đầy đủ 4 phía*/
+    width: auto;
+    right: 0;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    
+      /*phủ kín theo chiều dọc lệnh này phỉa có width và height mới thực hiện đc nếu không có phải đầy đủ 4 phía*/
+      height: auto;
+      /* top: 0; */
+      bottom: 0;
+      right: 0;
+      left: 100px;
+      z-index: 2; /*như kiểu lớp ý cái nào có z-index lớn hơn sẽ đc hiển thị cái nào bé sẽ bị cái lớn hơn che*/
+
+}
+p{   
+    /* position: relative;      
+    z-index: 1; */
+
+}
+.az{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+    /* left: 100px;      
+    bottom:-50px; */
+   
+   
+}
+/*thuộc tính position: absolute;khi 1 class đc đặt thuộc tính này sẽ k chiếm diện tích và sẽ di chuyển xung quanh và theo 1 class cha có chứa position*/
+/*left right bottom top của  position: absolute; khác với position: relative;*/
+
+.no{
+    width: 500px;
+    height: 500px;
+    background-color:black;
+    position: relative;
+    /* transform: translate(100%,100%); */
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+   /* transform: translatex(-200px); */
+
+}
+.si{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* margin-left: auto;
+    margin-right: auto;*/
+    position:absolute; 
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    width: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+
+}
+p{
+    /* overflow: hidden;    */
+}
+/*position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);.
+    /*position:absolute;
+      right: 50%;
+    bottom: 50%;    
+    transform: translate(50%,50%); 
+   2 câu lệnh này giúp đưa khối ra giữa khối cha,khối ra giữa phải có w,h (not auto,100%) */
+
+
+.ny{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+    position: fixed;         /*  r,l,b,t của fixed sẽ giống với của absolute*//*ko chiếm diện tích*/
+    /* bottom: 10px;
+    right: 10px; */
+    z-index: 10;                /*chỉ hiệu nghiệm khi có position*/
+    /* top:0; */
+    transform: translate(200px,200px);
+    
+ 
+  
+    
+
+
+}
+body{
+    /* transform: translate(200px,200px); */
+    /* height: 2000px; */
+    /* padding-top: 10rem; */
+   /* background-color: aliceblue; */
+   /* width: 100%;
+   height: 100%; */
+}
+.bu{
+    width: 50px;
+    height: 50px;
+    background-color: #f200ff;
+    z-index: 1;            
+    overflow: hidden;
+    position: relative;           /*chiếm diện tích*/
+}
+.mu{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+   
+}
+.tb{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-color:hwb(0 100% 0% / 0.485);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+p{
+    /* font-size: 2rem !important;
+    padding: 22rem;
+    margin-left: 100px;
+    color: bisque !important; */
+}
+.bt{
+    /* width: 200px;
+    height: 200px;
+    background-color: #f200ff;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;    /*transparent là đường kẻ trong suốt,lệnh này giúp tạo hình tam giác*/
+    /* border-bottom:200px solid black; */ 
+}
+.cms{
+    /* width:100px;
+    height: 100px;
+    background-color: aqua;
+    transform: rotate(45deg);
+    margin: 50px;   */
+}
+.phai{
+    /* width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.284);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+
+}
+.hinhtrong{
+    /* width: 60%;
+    height: 80%;
+    background-color:rgba(0, 206, 209, 0.448);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    
+  
+
+}
+.giua{
+    /* width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    object-fit: cover; */
+}   
+.fa-play{
+    /* font-size: 3rem;
+    color:rgba(255, 255, 255, 0.536);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    
+}
+.mh{
+    /* width: 20rem;
+    height: 60rem;
+    background-color: crimson;
+    position: relative;
+    transform: translatey(-10px); */
+}
+.sale{
+    /* width: 50px;
+    height: 50px; */
+    /* background-color: yellow;
+    position: absolute;
+    right: 0;
+    border-top: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    border-radius: 5px ;
+    top: 10px; */
+    
+}
+.vuong{
+    /* width: 200px;
+    height: 100px;
+    background-color:rgb(105, 105, 105);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    position: relative; */
+
+}
+.thanh{
+    /* width: 150px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+}
+.mau{
+    /* width: 70%;
+    height: 5px;
+    background-color: chartreuse;
+    border-radius: 5px; */
+}
+.tron{
+     /* width: 1rem;
+     height: 1rem;
+     background-color:chartreuse;
+     border-radius: 50%;
+     position: absolute;
+     left: 70%;
+     top: 50%;
+     transform: translate(-50%,-50%); */
+}
+
+
+.be{
+    /* margin-left: 300px;
+    margin-top: 100px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 8rem; */
+    
+  
+}
+
+
+.be:after{
+    /* content:"";
+    width: 5rem;
+    height:5rem;
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+     top: 50%;
+     transform: translate(-50%,-50%); */
+}
+.ovuong{
+    width: 190px;
+    height: 130px;
+    background-color:white;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10%;
+     position: relative;
+     border-radius: 10px;
+}
+.qs1{
+    position:absolute;
+    font-weight: bold;
+    left: 10px;
+    top: 20px;
+}
+.cauhoi{
+    position:absolute;
+    font-size: 1rem;
+    top: 40px;
+    left: 10px;
+}
+.onho{
+   width: 30px;
+   height: 30px;
+   background-color: aqua;
+   display: inline-block;
+   border-radius: 5px;
+   text-align: center;
+   margin-left: 5px;
+   margin-top: 70px;
+   padding: 10px;
+}
+body{
+    /* background-color: rgba(0, 0, 0, 0.411); */
+}
+/* .line{
+  text-align: center;
+  position: relative;
+  margin-top: 150px;
+  background-color: white;
+  z-index: 2;
+
+ 
+}
+.line:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%); 
+}
+.text{
+    position: relative;
+    z-index: 2;
+    background-color:white;
+} */
+.icon{
+    /* width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    position: relative;
+    margin: 15rem auto; */
+    /* color:blue */
+    
+}
+.icon::after{
+    /* content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: currentColor;           /*currentColor thuộc tính này màu sẽ theo màu của cha */
+    /* opacity: 0.50;
+    top: 0;
+    left: 0; */ 
+}
+/* .fa-facebook{
+    position: absolute;
+    left: 50%;
+    top: 50%;   
+    transform: translate(-50%,-50%); 
+    font-size: 1rem;
+} */
+.effect{
+    /* text-decoration: none;  bỏ gạch chân của chữ */
+    /* background-color:rgb(240, 231, 231);
+    border: 1px solid orange;
+    display: inline-block;
+    margin: 100px ;
+    margin-left: 200px;
+    padding: 2rem;
+    transition: color 2s linear;
+    position: relative;
+    z-index: 1;             để z index là 1 cho khối cha và -1 cho khối con để hiện cả 2 cx lúc */
+}
+.effect:before{
+    /* content: "";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: aqua;
+        top: 0;
+        left:0;
+        z-index: -1;
+        transition: all 2s linear; */
+
+}
+.effect:hover::before{
+     /* height: 100%;        */
+}
+.effect:hover{
+    /* color: white; */
+}
+.nguon{
+    width: 110px;
+    height: 50px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0,5s linear;
+   
+}
+.nguon:before{
+    content:"";
+    position: absolute;
+     width: 45px;
+     height: 45px;
+     background-color: #f8f6f8;
+     border-radius: 50%;
+     position: absolute;
+     left: 2%;
+     bottom: 50%;    
+     transform: translatey(50%); 
+     transition: all 0.25s linear;  
+     cursor: pointer; 
+     
+}
+.nguon:active::before{
+    left:57%;
+    bottom: 50%;    
+    transform: translatey(50%);
+
+}
+.nguon:active{
+    background-color: rgb(226, 43, 131);
+     /* transform: scale(2,2); */
+    
+}
+body:active{
+    background-color:black !important;
+    
+}
+body{
+    cursor: pointer;
+}
+.bao{
+    font-size: 5rem;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#f200ff;
+    opacity: 0;
+    transition: all 3s linear;
+}
+.nguon:active .bao{
+    opacity: 1;
+   /* transform:skew(30deg,20deg);  
+     */
+      /* transform:rotatez(45deg,y,z);       /*rotate:xoay khối đó deg là độ z là mặt phẳng*/
+    /* transform: translate(-50%,-50%);   /*translate:giúp dịch chuyển khối giống margin nhưng vị trí vẫn ở chỗ cũ,100% là sẽ dịch chuyern theo đúng kích thước của khối đó*/
+    /* transform: skew(30deg,20deg);        skew:nghiêng khối đó */
+
+}
+
+.bao::after{
+    content: "CON LỢN NÀY";
+    font-size: 5rem;
+    color: white;
+
+}
+.dinh{
+    font-size: 3rem;
+    color: #f200ff;
+   position: absolute;
+   left: 78%;
+   top: 50%;   
+   transform: translate(-50%,-50%); 
+    opacity: 0;
+    transition: all 1s linear;
+    /* box-shadow: 20px -20px 10px 10px red; */
+ 
+ }
+ .nguon:active .dinh{
+    opacity: 1;
+ }  
+ .dinh:hover{
+
+    transform: scale(2,2);
+ }
+ .bodi{
+    
+    width: 100%;
+    height: 700px;
+    background-color:white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+/* box-shadow: x y blur spread color inset;  /* tạo bóng cho khối */
+   /* x:Giá trị dương là sang phải, giá trị âm là sang trái.
+   y:Giá trị dương là xuống dưới, giá trị âm là lên trên.
+   blur:Độ mờ của bóng. Giá trị càng lớn, bóng càng mờ.
+   spread:Tăng hoặc giảm kích thước của bóng.
+   inset:bóng sẽ nằm ở bên trong khối*/ 
+
+.people{
+    font-size: 3rem;
+    color: #f200ff;
+
+}
+.traitym{
+    font-size: 3rem;
+    color: #f200ff;
+}
+.icon{
+    font-size: 3rem;
+    color: #f200ff;
+    opacity: 0;
+    transition: all 3s linear ;
+}
+.nguon:active .icon{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+   
+ 
+
+  
+
+
